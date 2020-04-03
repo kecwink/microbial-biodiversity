@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Belly Button Biodiversity</title>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" type='text/css' href="./style.css">
 </head>
-<h1>Belly Button Biodiversity
-    Dashboard
-</h1>
+
 <body>
+  <div class="banner" style=background:#f1f1f1>
+    <h1 style=text-align: center>Belly Button Biodiversity
+      Dashboard
+    </h1>
+  </div>
+
+  <div id="plot" >
   
-  <div id="plot"></div>
-  <h5>Test Subject Id No:</h5>
 
-    <!-- create dropdown box for individual(week2, exercise8) -->
-    <select id="selTestSubject" onclick = 'init()'>
-      <!-- onchange = 'getSelectedValue(); -->    
-      
-      
-    </select>
-    <div id ="demographicInfo" onload = 'getInfo()'>
-      <h4> Subject Info</h4>
+  <!-- create dropdown box for individual(week2, exercise8) -->
+  <div class = 'selectBox'>
+    <h5>Test Subject Id No:</h5>
+  <select id="selTestSubject" onchange='onChange(this.value)'>  
+  </select>
+</div>
 
-      
+  <div id="demographicInfo" onload='getInfo()'>
+    <h4> Subject Info</h4>
+  </div>
 
-    </div>
-    
+  <div id="plot" onload='getPlot()'>
+  </div>
+</div>
+  <div id="bubbleChart" onload='getBubbleChart()'>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
   <!-- <script src="data/data.json"></script> -->
   <script src="plot.js"></script>
 
-  
+
 </body>
+
 </html>
