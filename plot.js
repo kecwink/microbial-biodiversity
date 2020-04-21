@@ -7,7 +7,7 @@ d3.json('samples.json').then((data) => {
     allData = data;
     init()
 });
-
+//console.log(allData)
 function init() {
     //select dropDown menu
     var dropDown = d3.select('#selTestSubject');
@@ -49,7 +49,7 @@ function getPlot(sample) {
 
     //find the sampledata that matches the sample
     var data = allData.samples.filter(obj => obj.id == sample)[0]
-    //console.log(data)
+    console.log(data)
 
 
     //isolate the top ten most common bacteria
@@ -78,12 +78,17 @@ function getPlot(sample) {
     var graphData = [trace1];
 
 
+    //scale the x-axis
+    var axisTemplate ={
+        nticks:  4,
+        title:  "Number of Specimen",
+    };
     // Define the plot layout
     var layout = {
-        xaxis: { title: "Number of Specimen" },
+        xaxis: axisTemplate
     };
 
-    Plotly.newPlot("plot", graphData, layout);
+    Plotly.newPlot("sampleBacteria", graphData, layout);
 
     getBubbleChart(allData.names[0])
 

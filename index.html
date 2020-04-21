@@ -11,37 +11,42 @@
 </head>
 
 <body>
-  <div class="banner" style=background:#f1f1f1>
-    <h1 style=text-align: center>Belly Button Biodiversity
+  <div class="banner">
+    <h1 >Belly Button Biodiversity
       Dashboard
     </h1>
   </div>
 
-  <div id="plot" >
-  
 
   <!-- create dropdown box for individual(week2, exercise8) -->
-  <div class = 'selectBox'>
+  <div class='selectBox' onload='getInfo()'>    
     <h5>Test Subject Id No:</h5>
-  <select id="selTestSubject" onchange='onChange(this.value)'>  
-  </select>
-</div>
-
-  <div id="demographicInfo" onload='getInfo()'>
+    <select id="selTestSubject" onchange='onChange(this.value)'>
+    </select>        
+  </div>
+  <div id='demographicInfo'>
+    <!-- id="demographicInfo" -->
     <h4> Subject Info</h4>
   </div>
-
-  <div id="plot" onload='getPlot()'>
+  <div id="sampleBacteria" onload='getPlot()'>
   </div>
-</div>
+  
+  
+  
+
+
+
+  
+  
   <div id="bubbleChart" onload='getBubbleChart()'>
   </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
-  <script src="data/data.json"></script>
+  <script src="data/data.json"></script> 
   <script src="plot.js"></script>
 
+  
 
 </body>
 
