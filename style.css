@@ -1,0 +1,39 @@
+h1 {
+    font-size: 80px;
+    font-style: italic;
+  }
+
+.banner{
+    background-color:#f1f1f1;
+    height: 250px;
+    text-anchor: middle;
+    text-align: center;
+}
+
+/* .plot{
+  border-color: grey;
+} */
+
+.selectBox{
+  height: 100px;
+  width: 60px;
+  padding: 0px;
+  background-color:grey;
+  text-align: left;
+  
+  
+}
+
+/* .demographicInfo{
+  height:650px;
+  width: 100 px;
+  padding: 0px;
+  background-color: lightslategray;
+
+
+} */
+
+.sampleBacteria{
+  width: 600px;
+  height: 600px;
+}
