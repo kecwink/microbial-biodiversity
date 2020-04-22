@@ -1,7 +1,7 @@
 var allData;
 
 //read the data
-d3.json('./samples.json').then((data) => {
+d3.json('samples.json').then((data) => {
     //console.log(data) 
 
     allData = data;
