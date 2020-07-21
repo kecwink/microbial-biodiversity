@@ -10,9 +10,6 @@ h1 {
     text-align: center;
 }
 
-/* .plot{
-  border-color: grey;
-} */
 
 .selectBox{
   height: 100px;
@@ -24,14 +21,6 @@ h1 {
   
 }
 
-/* .demographicInfo{
-  height:650px;
-  width: 100 px;
-  padding: 0px;
-  background-color: lightslategray;
-
-
-} */
 
 .sampleBacteria{
   width: 600px;
