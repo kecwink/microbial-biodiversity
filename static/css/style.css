@@ -1,0 +1,28 @@
+h1 {
+    font-size: 80px;
+    font-style: italic;
+  }
+
+.banner{
+    background-color:#f1f1f1;
+    height: 250px;
+    text-anchor: middle;
+    text-align: center;
+}
+
+
+.selectBox{
+  height: 100px;
+  width: 60px;
+  padding: 0px;
+  background-color:grey;
+  text-align: left;
+  
+  
+}
+
+
+.sampleBacteria{
+  width: 600px;
+  height: 600px;
+}
