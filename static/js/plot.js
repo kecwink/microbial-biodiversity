@@ -1,7 +1,7 @@
 var allData;
 
 
-d3.json('static/data/samples.json').then((data) => {   
+d3.json("static/data/samples.json").then((data) => {   
 
     allData = data;
     init()
