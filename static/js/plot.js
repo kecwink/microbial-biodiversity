@@ -1,7 +1,7 @@
 var allData;
 
 
-d3.json('samples.json').then((data) => {   
+d3.json('static/data/samples.json').then((data) => {   
 
     allData = data;
     init()
@@ -46,8 +46,7 @@ function getPlot(sample) {
 
     //find the sampledata that matches the sample
     var data = allData.samples.filter(obj => obj.id == sample)[0]
-    console.log(data)
-
+    
 
     //isolate the top ten most common bacteria
     var bacteriaSamples = data.sample_values.slice(0, 10)
